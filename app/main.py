@@ -11,7 +11,7 @@ import gdown
 working_dir = os.path.dirname(os.path.abspath(__file__))
 
 # Google Drive file ID for your model
-file_id = '1rKh-IElSdHTqax7XdfSdZTn-r8T_qWPf'
+file_id = '18tfFcyf9DgK_r7cPIMPDDmPB7IT0-NIp'
 model_path = os.path.join(working_dir, 'model.h5')
 
 # Download the model if it doesn't exist
@@ -75,3 +75,4 @@ if uploaded_image is not None:
         if st.button('Classify'):
             prediction = predict_image_class(model, uploaded_image, class_indices)
             st.success(f'Prediction: {str(prediction)}')
+
